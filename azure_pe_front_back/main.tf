@@ -297,3 +297,11 @@ resource "azurerm_windows_virtual_machine" "vm" {
   depends_on = [azurerm_network_interface_security_group_association.vm_nic_assoc]
 }
 
+
+resource "azurerm_private_dns_a_record" "alias_dbw_auth" {
+  name                = "dbw-auth"  # friendly hostname prefix
+  zone_name           = azurerm_private_dns_zone.pl_dns.name
+  resource_group_name = azurerm_private_dns_zone.pl_dns.resource_group_name
+  ttl                 = 300
+  records             = ["10.2.10.4"]  # IP from your DNS lookup
+}
