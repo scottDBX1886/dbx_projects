@@ -1,0 +1,16 @@
+id: 6722a6eb-9991-4c2d-8231-adc578a0f873
+pipeline_type: WORKSPACE
+name: New Pipeline 2025-07-16 09:38
+libraries:
+  - glob:
+      include: /Workspace/Users/scott.johnson@databricks.com/dbx_projects/autoCDC/autoCDC_autoLoader
+  - glob:
+      include: /Workspace/Users/scott.johnson@databricks.com/dbx_projects/autoCDC/autoCDC_SCD
+schema: dbdemos_dlt_cdc
+continuous: false
+development: true
+photon: true
+channel: CURRENT
+catalog: demo
+serverless: true
+root_path: /Workspace/Users/scott.johnson@databricks.com/dbx_projects/autoCDC
