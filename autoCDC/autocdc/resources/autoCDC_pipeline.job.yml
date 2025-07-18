@@ -1,0 +1,20 @@
+resources:
+  jobs:
+    autoCDC_pipeline:
+      name: autoCDC_pipeline
+      queue:
+        enabled: true
+
+      # tasks:
+      #   - task_key: notebook_task
+      #     notebook_task:
+      #       notebook_path: ../path/to/notebook.ipynb
+      # email_notifications:
+      #   no_alert_for_skipped_runs: true
+      #   on_failure:
+      #     - scott.johnson@databricks.com
+      # trigger:
+      #   # Run this job every day, exactly one day from the last run; see https://docs.databricks.com/api/workspace/jobs/create#trigger
+      #   periodic:
+      #     interval: 1
+      #     unit: DAYS
